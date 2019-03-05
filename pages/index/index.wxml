@@ -1,0 +1,16 @@
+<c-nav class='nav' catch:nav='onNav'/>
+
+<c-recommend recommend='{{recommendList}}' 
+			 class='recommend' 
+			 magazine-id='{{magazineId}}'/>
+
+<c-tagList mark-list='{{markList}}'>
+    <c-add slot='before' class='add' wx:if='{{magazineId == 0}}' />
+    <view slot='after' class='to-catalog' catch:tap='onCatalog' wx:if='{{magazineId == 0}}'>...</view>
+</c-tagList>
+
+<c-articleList article-list='{{articleList}}' more='{{getMore}}' magazine-id='{{magazineId}}' />
+
+<view class='loading-container' wx:if='{{loading}}'>
+    <c-loading class='loading' />
+</view>
