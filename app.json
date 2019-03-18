@@ -3,7 +3,6 @@
 		"pages/catalog/catalog",
 		"pages/mark/mark",
 		"pages/index/index",
-		"pages/type/type",
 		"pages/search/search"
 	],
 	"window": {
