@@ -1,8 +1,0 @@
-<!--components/bigImg/cmp.wxml-->
-<view class="container">
-    <image  class="image" 
-            mode="widthFix"
-            src="{{imgSrc}}" />
-
-    <text class="text">{{mainTitle}}</text>
-</view>
